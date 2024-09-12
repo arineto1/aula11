@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #paisagem{
+            width: 80vw;
+            height: 80vh;
+            border: solid red 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+        #personagem{
+            width: 200px;
+            height: 200px;
+            border: black solid 3px;
+        }
+        .capivara{
+            background-image: url(https://img2.gratispng.com/20180716/hlp/b14eac55f594427c26e2656b5d0b60b7.webp);
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="paisagem">
+        <div id="personagem"></div>
+        <button onclick="inserirCapivara()">Capivara</button>
+        <button onclick="removerCapivara()">Remover Capivara</button>
+    </div>
+        <button >Paisagem</button>
+        <button>Remover Paisagem</button>
+
+
+       
+</body>
+    <script>
+        function inserirCapivara(){
+            let personagem = document.getElementById('personagem')
+            personagem.classList.add('capivara')
+        }
+        function removerCapivara(){
+            let personagem = document.getElementById('personagem')
+            personagem.classList.remove('capivara')
+        }
+    </script>
+    
+</html>
